@@ -1,10 +1,16 @@
-from flask import Flask
+from transformers import pipeline
+import librosa
+from noisereduce import reduce_noise
+import gradio as gr
 
-app = Flask(__name__)
+def transc_pipeline ()-> str :
+    y,sr = librosa.load(audio, sr = 16000)
+    noise_reduced = reduce_noise(y=y, sr=sr)
+    pipe = pipeline('automatic-speech-recognition', model = 'serge-wilson/wav2vec-base-wolof')
+    transcription = pipe("audio/WOL_05_lect_0027.wav")
 
-@app.route('/home')
-def home():
-    return "Bienvenue sur la page d'accueil !"
+    return transcription
 
-if __name__ == '__main__':
-    app.run(debug=True)
+gr.Interface(
+    fn
+)
