@@ -11,9 +11,9 @@ from sklearn.metrics import silhouette_score
 def show():
     # Options des modèles
     model_options = {
-        "Modèle KMeans n°1 ": "kmeans_model.pkl",
+        "Modèle KMeans cluster ": "kmeans_model.pkl",
        # "Modèle KMeans (sans normalisation, avec date)": "kmeans_model_.pkl",
-        "Modèle KMeans n°2 ": "kmeans_model_norm.pkl",
+       # "Modèle KMeans n°2 ": "kmeans_model_norm.pkl",
        # "Modèle KMeans (avec normalisation, avec date)": "kmeans_model_with_date_norm.pkl"
     }
 
