@@ -3,6 +3,8 @@ from pages import prediction_page, clustering_page
 # Injecter du CSS personnalisé pour un affichage en plein écran
 
 st.set_page_config(layout="wide")
+# Ajout de logo
+st.sidebar.image("logodit.jpg", width=2000)
 st.markdown(
     """
     <style>
@@ -22,8 +24,6 @@ st.markdown(
 # Titre de l'application
 st.title("Mon Application de Machine Learning By Afdel Desmond")
 
-# Ajout de logo
-st.sidebar.image("logodit.jpg", width=2000)
 
 
 # Navbar avec des boutons en bloc

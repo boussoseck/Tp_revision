@@ -53,16 +53,16 @@ def show():
     # Préparation des données
     df_processed = df.drop(['Column1', 'Column2', 'Column3', 'Column4', 'status_id'], axis=1)
 
-    # # Gestion de la colonne 'status_published'
-    # if "avec date" in selected_model:
-    #     df_processed['year'] = df['status_published'].dt.year.astype(float)
-    #     df_processed['month'] = df['status_published'].dt.month.astype(float)
-    #     df_processed['day'] = df['status_published'].dt.day.astype(float)
-    #     df_processed['hour'] = df['status_published'].dt.hour.astype(float)
-    #     df_processed['minute'] = df['status_published'].dt.minute.astype(float)
-    #     df_processed = df_processed.drop(['status_published'], axis=1)
-    # else:
-    #     df_processed = df_processed.drop(['status_published'], axis=1)
+    # Gestion de la colonne 'status_published'
+    if "avec date" in selected_model:
+        df_processed['year'] = df['status_published'].dt.year.astype(float)
+        df_processed['month'] = df['status_published'].dt.month.astype(float)
+        df_processed['day'] = df['status_published'].dt.day.astype(float)
+        df_processed['hour'] = df['status_published'].dt.hour.astype(float)
+        df_processed['minute'] = df['status_published'].dt.minute.astype(float)
+        df_processed = df_processed.drop(['status_published'], axis=1)
+    else:
+        df_processed = df_processed.drop(['status_published'], axis=1)
 
     # Encoder la colonne catégorielle
     le = LabelEncoder()

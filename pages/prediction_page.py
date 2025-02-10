@@ -23,6 +23,8 @@ def predict_diabetes(model, input_data):
 # Interface utilisateur
 def show():
     st.title("🩺 Prédiction du Diabète")
+
+
     st.markdown("""
         <div style="background-color: #f8f9fa; padding: 10px; border-radius: 10px; text-align: center;">
         💡 Entrez les informations médicales et obtenez une prédiction basée sur l'IA.
