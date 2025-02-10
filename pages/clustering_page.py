@@ -11,7 +11,7 @@ from sklearn.metrics import silhouette_score
 def show():
     # Options des modèles
     model_options = {
-        "Modèle KMeans cluster ": "kmeans_model.pkl",
+        "Modèle KMeans n°1 ": "kmeans_model.pkl",
        # "Modèle KMeans (sans normalisation, avec date)": "kmeans_model_.pkl",
        # "Modèle KMeans n°2 ": "kmeans_model_norm.pkl",
        # "Modèle KMeans (avec normalisation, avec date)": "kmeans_model_with_date_norm.pkl"
@@ -44,7 +44,7 @@ def show():
         "Modèle KMeans n°1 ": "Ce modèle utilise les données brutes sans normalisation et exclut la colonne 'status_published'.",
         #"Modèle KMeans (sans normalisation, avec date)": "Ce modèle utilise les données brutes sans normalisation et inclut la colonne 'status_published'.",
         #"Modèle KMeans (avec normalisation, sans date)": "Ce modèle normalise les données et exclut la colonne 'status_published'.",
-        "Modèle KMeans n°2 ": "Ce modèle normalise les données et inclut la colonne 'status_published'.",
+        #"Modèle KMeans n°2 ": "Ce modèle normalise les données et inclut la colonne 'status_published'.",
     }
 
     st.write("### 🛠️ Description du modèle sélectionné")
