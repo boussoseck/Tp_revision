@@ -12,7 +12,7 @@ except Exception as e:
     st.error(f"Erreur lors du chargement des modèles : {e}")
 
 # Charger les données pour récupérer les colonnes de caractéristiques
-data = pd.read_csv("diabetes.csv")  
+data = pd.read_csv("pages/datas/diabetes.csv")  
 feature_columns = [col for col in data.columns if col.lower() != "outcome"]
 
 # Fonction de prédiction
