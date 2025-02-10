@@ -20,7 +20,11 @@ st.markdown(
 )
 
 # Titre de l'application
-st.title("Application de Machine Learning")
+st.title("Mon Application de Machine Learning By Afdel Desmond")
+
+# Ajout de logo
+st.sidebar.image("logodit.jpg", width=2000)
+
 
 # Navbar avec des boutons en bloc
 st.markdown("---")
@@ -43,7 +47,7 @@ if "page" not in st.session_state:
 # Pages
 if st.session_state.page == "Accueil":
     st.header("Accueil")
-    st.subheader("✨Bienvenue sur l'Application de Machine Learning✨")
+    st.subheader("✨Bienvenue sur Mon Application de Machine Learning✨")
     st.write("💡 Plongez dans la puissance de l'IA en un clic 🤖📊 : prédisez le risque de diabète grâce à des modèles intelligents 🩺📈, explorez vos données avec des techniques de clustering fascinantes 🎨🔬, analysez vos propres fichiers CSV pour en tirer des insights précieux 📊📂. 🚀 Utilisez les boutons ci-dessous pour naviguer et libérez tout le potentiel du Machine Learning ! 🔎✨📈")
  
     # Boutons pour rediriger vers les différentes pages
@@ -74,9 +78,9 @@ elif st.session_state.page == "À propos":
         Cette application a été conçue pour **démontrer la puissance du Machine Learning** dans le domaine de la santé, tout en facilitant l'analyse des données pour les utilisateurs. 
         **Facile à utiliser, rapide et efficace**, elle est idéale pour ceux qui veulent intégrer l'IA dans leurs pratiques médicales. 🌟
     """)
-    st.write("""
-        **Développée avec soin et passion**, cette application vous permet de naviguer à travers des modèles d'IA et des outils d'analyse pour améliorer vos prises de décision et gagner du temps. 🚀
-    """)
+    # st.write("""
+    #     **Développée avec soin et passion**, cette application vous permet de naviguer à travers des modèles d'IA et des outils d'analyse pour améliorer vos prises de décision et gagner du temps. 🚀
+    # """)
     # Boutons pour rediriger vers les différentes pages
     st.markdown("---")
     col1, col2 = st.columns(2)
