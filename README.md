@@ -1,58 +1,58 @@
-# Diabetes Predictor - ML Web Application 🩺🤖
+# Diabetes Predictor - Application Web ML 🩺🤖
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Licence: MIT](https://img.shields.io/badge/Licence-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Web_Framework-Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Interface-Streamlit-FF4B4B.svg)](https://streamlit.io/)
 
-**An advanced AI-powered diabetes risk prediction tool for healthcare professionals**
+**Outil avancé de prédiction du risque diabétique par intelligence artificielle pour professionnels de santé**
 
-## 📌 Project Overview
-This project develops an innovative predictive solution to assess diabetes risk in patients using Machine Learning algorithms and modern data analysis techniques. The goal is to provide healthcare professionals with a precise, interactive, and easy-to-use tool for early screening and medical data exploration.
+## 📌 Présentation du Projet
+Ce projet développe une solution prédictive innovante pour évaluer les risques de diabète chez les patients en utilisant des algorithmes de Machine Learning et des techniques modernes d'analyse de données. L'objectif est de fournir aux soignants un outil précis et interactif pour le dépistage précoce et l'exploration de données médicales.
 
-![Demo GIF](https://via.placeholder.com/800x400?text=Diabetes+Predictor+Demo) *(Replace with actual demo gif)*
+![GIF de démonstration](https://via.placeholder.com/800x400?text=Démonstration+Diabetes+Predictor) *(Remplacer par un vrai GIF de démo)*
 
-## ✨ Key Features
-### 🔍 Diabetes Risk Prediction
-- Input medical parameters (glucose, BMI, age, etc.) → instant results with probability
-- Explanation of key influencing factors (feature importance)
+## ✨ Fonctionnalités Principales
+### 🔍 Prédiction du Risque Diabétique
+- Saisie des paramètres médicaux (glycémie, IMC, âge...) → résultat instantané avec probabilité
+- Explication des facteurs clés influençant la prédiction
 
-### 📊 Patient Clustering with KMeans
-- Detection of patient groups with similar profiles
-- Interactive 2D/3D visualization to identify trends (e.g., obesity-diabetes relationship)
+### 📊 Clustering des Patients avec KMeans
+- Détection de groupes de patients aux profils similaires
+- Visualisation interactive 2D/3D des tendances (ex: lien obésité-diabète)
 
-### 📈 Data Analysis Toolkit
-- CSV file import for custom dataset analysis
-- Interactive dashboard with descriptive statistics, correlations, and outlier detection
+### 📈 Analyse de Données
+- Import de fichiers CSV pour l'analyse de jeux de données personnalisés
+- Tableau de bord interactif avec statistiques et corrélations
 
-## 🛠️ Tech Stack & Methodology
-### Machine Learning Algorithms
-| Algorithm | Type | Use Case |
-|-----------|------|----------|
-| Logistic Regression | Supervised | Binary classification (diabetic/non-diabetic) |
-| SVM | Supervised | Optimal class separation in complex spaces |
-| KNN | Supervised | Effective for non-linear data patterns |
-| KMeans | Unsupervised | Patient segmentation into homogeneous groups |
+## 🛠️ Technologies & Méthodologie
+### Algorithmes de Machine Learning
+| Algorithme | Type | Utilisation |
+|------------|------|-------------|
+| Régression Logistique | Supervisé | Classification binaire (diabétique/non-diabétique) |
+| SVM | Supervisé | Séparation optimale des classes |
+| KNN | Supervisé | Analyse des données non-linéaires |
+| KMeans | Non-supervisé | Segmentation des patients |
 
-### Development Stack
+### Stack Technique
 **Backend:**
-- Python, Scikit-learn, Pandas (data cleaning & analysis)
+- Python, Scikit-learn, Pandas (nettoyage & analyse des données)
 
-**Frontend:**
-- Streamlit (interactive web interface)
+**Interface:**
+- Streamlit (application web interactive)
 
-**Visualization:**
-- Matplotlib/Plotly (dynamic charts & clusters)
+**Visualisation:**
+- Matplotlib/Plotly (graphiques dynamiques)
 
-**Deployment:**
-- Docker (containerization for portability)
+**Déploiement:**
+- Docker (conteneurisation)
 
-## 🚀 Getting Started
-### Prerequisites
+## 🚀 Premiers Pas
+### Prérequis
 - Python 3.8+
 - pip
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/Diabetes-Predictor-ML-WebApp.git
+git clone https://github.com/votrenom/Diabetes-Predictor-ML-WebApp.git
 cd Diabetes-Predictor-ML-WebApp
 pip install -r requirements.txt
